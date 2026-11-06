@@ -1,19 +1,16 @@
-from pydantic import BaseModel
+from schemas.pokemon import Pokemon
 import requests
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
-class Pokemon(BaseModel):
-    number: int
-    name: str
-    name_fr: str
-    types: list[str]
-    image_url: str
-    height: int
-    weight: int
-    evolves_from_number: int | None = None
 
+
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
 
 
 @app.get("/pokemons/{number}", response_model=Pokemon)
@@ -39,5 +36,6 @@ def get_pokemon(number: int):
         "height": data["height"],
         "weight": data["weight"],
     }
+
 
 
