@@ -9,7 +9,7 @@ Les Pokémon ne sont pas tous téléchargés au départ : un Pokémon est récup
 ## Technologies
 
 - Python
-- FastAP
+- FastAPI
 - Pydantic
 - SQLite
 - requests
