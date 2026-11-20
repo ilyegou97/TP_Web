@@ -12,3 +12,4 @@ class Pokemon(BaseModel):
     height: int
     weight: int
     evolves_from_number: int | None = None
+    evolves_from_name: str | None = None
