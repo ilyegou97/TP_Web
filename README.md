@@ -80,16 +80,27 @@ POKEDEX/
 └── requirements.txt      # dépendances
 ```
 
+
 ## Avancement
 
-- [x] Route `/health`
-- [x] Route `/pokemons/{number}`
-- [x] Modèle Pydantic
-- [x] Base SQLite
-- [ ] Repository
-- [ ] Route de scan `/pokemons/{number}/scan`
-- [ ] Nom français, types traduits et évolution précédente
+- [x] Route `/health` — commit `17d9d0d`
+- [x] Route `/pokemons/{number}` — commit `17d9d0d`
+- [x] Modèle Pydantic — commit `b933d32`
+- [x] Base SQLite — commits `b933d32` (création) et `d6f9f12` (connexion)
+- [x] Repository — commit `d6f9f12`
+- [x] Route de scan `/pokemons/{number}/scan` — commit `d6f9f12`
+- [x] Nom français — commit `832a1b9`
+- [ ] Types traduits et évolution précédente
 - [ ] Cache des types
 - [ ] Route de liste `/pokemons`
 - [ ] Sécurité par jeton Bearer
 - [ ] CORS et intégration avec les pages HTML
+
+
+## commande terminal pour push sur github
+
+git status                 # voir les fichiers modifiés
+git add README.md          # préparer le fichier pour le commit
+git commit -m "Ajout des commits dans l'avancement du README"
+git pull                   # récupérer d'abord le travail des autres membres du groupe
+git push                   # envoyer ton commit
