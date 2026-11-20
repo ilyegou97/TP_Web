@@ -90,9 +90,9 @@ POKEDEX/
 - [x] Repository — commit `d6f9f12`
 - [x] Route de scan `/pokemons/{number}/scan` — commit `d6f9f12`
 - [x] Nom français — commit `832a1b9`
-- [ ] Types traduits et évolution précédente
-- [ ] Cache des types
-- [ ] Route de liste `/pokemons`
+- [x] Types traduits et évolution précédente
+- [x] Cache des types
+- [x] Route de liste `/pokemons`
 - [ ] Sécurité par jeton Bearer
 - [ ] CORS et intégration avec les pages HTML
 
